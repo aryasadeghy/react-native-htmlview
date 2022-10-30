@@ -2,7 +2,6 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import htmlToElement from './htmlToElement';
 import { Linking, Platform, StyleSheet, View } from 'react-native';
-import { ViewPropTypes } from 'deprecated-react-native-prop-types';
 
 const boldStyle = { fontWeight: 'bold' };
 const italicStyle = { fontStyle: 'italic' };
@@ -134,25 +133,6 @@ class HtmlView extends PureComponent {
   }
 }
 
-HtmlView.propTypes = {
-  addLineBreaks: PropTypes.bool,
-  bullet: PropTypes.string,
-  lineBreak: PropTypes.string,
-  NodeComponent: PropTypes.func,
-  nodeComponentProps: PropTypes.object,
-  onError: PropTypes.func,
-  onLinkPress: PropTypes.func,
-  onLinkLongPress: PropTypes.func,
-  paragraphBreak: PropTypes.string,
-  renderNode: PropTypes.func,
-  RootComponent: PropTypes.func,
-  rootComponentProps: PropTypes.object,
-  style: ViewPropTypes.style,
-  stylesheet: PropTypes.object,
-  TextComponent: PropTypes.func,
-  textComponentProps: PropTypes.object,
-  value: PropTypes.string,
-};
 
 HtmlView.defaultProps = {
   addLineBreaks: true,
